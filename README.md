@@ -43,7 +43,34 @@
 }
 ```
 ![image.png](https://i.loli.net/2021/04/30/QKiZfN3qHe6aCGx.png)
-
-
+### 边框内圆角
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .something{
+            width: 300px;
+            background: #655;
+            padding: .8em;
+        }
+        .something > div{
+            background: tan;
+            border-radius: .8em;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="something">
+        <div>这是一个边框内圆角</div>
+    </div>
+</body>
+</html>
+```
+![image.png](https://i.loli.net/2021/04/30/HunPUz9JLXVkqFG.png)
 
 
