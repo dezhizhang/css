@@ -45,32 +45,50 @@
 ![image.png](https://i.loli.net/2021/04/30/QKiZfN3qHe6aCGx.png)
 ### 边框内圆角
 ```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .something{
-            width: 300px;
-            background: #655;
-            padding: .8em;
-        }
-        .something > div{
-            background: tan;
-            border-radius: .8em;
-            padding: 1em;
-        }
-    </style>
-</head>
-<body>
-    <div class="something">
-        <div>这是一个边框内圆角</div>
-    </div>
-</body>
-</html>
+.something{
+    width: 300px;
+    background: #655;
+    padding: .8em;
+}
+.something > div{
+    background: tan;
+    border-radius: .8em;
+    padding: 1em;
+}
+<div class="something">
+    <div>这是一个边框内圆角</div>
+</div>
 ```
 ![image.png](https://i.loli.net/2021/04/30/HunPUz9JLXVkqFG.png)
+### 条纹背景
+```
+#box{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(#fb3,#58a);
+}
+```
+![image.png](https://i.loli.net/2021/05/01/gRk2rStmAecs6HM.png)
+### 三条条纹
+```
+#box{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(#fb3 33.3%,#58a 0,#58a 66.6%,yellowgreen 0);
+    background-size: 100% 45px;
+}
+```
 
+![image.png](https://i.loli.net/2021/05/01/UzX29LrYuyMgjeA.png)
+### 垂直条纹
+```
+#box{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to right, #fb3 50%, #58a 0);
+    background-size: 30px 100%;
+}
+```
+[垂直条纹](https://dabblet.com/gist/1b4983062fd2b4d7e60e)
+![image.png](https://i.loli.net/2021/05/01/UzX29LrYuyMgjeA.png)
 
