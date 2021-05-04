@@ -91,4 +91,45 @@
 ```
 [垂直条纹](https://dabblet.com/gist/1b4983062fd2b4d7e60e)
 ![image.png](https://i.loli.net/2021/05/01/UzX29LrYuyMgjeA.png)
+### 网格
+```
+#box{
+    width: 210px;
+    height: 210px;
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;
+    background-image: 
+    linear-gradient(red 1px,transparent 0),
+    linear-gradient(90deg,red 1px,transparent 0);
+    background-size: 30px 30px;
+    ;
+}
+```
+![image.png](https://i.loli.net/2021/05/04/QWMFhjiTOKA6PVc.png)
+### 波点
+```
+#box{
+    width: 200px;
+    height: 200px;
+    background: #655;
+    background-image: radial-gradient(tan 30%,transparent 0);
+    background-size: 30px 30px;
+}
+```
+![image.png](https://i.loli.net/2021/05/04/V5rIT3SntFDmKR6.png)
+### 波点图2
+```
+#box{
+    width: 200px;
+    height: 200px;
+    background-size: 30px 30px;
+    background-image: radial-gradient(tan 30%,transparent 0),
+    radial-gradient(red 30%,transparent 0);
+    background-position: 0 0,15px 15px;
+}
+```
+![image.png](https://i.loli.net/2021/05/04/5rgbZBT4y9FESaV.png)
+
+
+
 
