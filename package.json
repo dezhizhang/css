@@ -1,12 +1,12 @@
 {
   "name": "css-demo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "css",
   "main": "./dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"webpack",
-    "start":"webpack-dev-server && npm run build"
+    "build": "webpack",
+    "start": "webpack-dev-server && npm run build"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/dezhizhang/css#readme",
   "devDependencies": {
     "css-loader": "^5.2.4",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",
     "less": "^4.1.1",
     "less-loader": "^8.1.1",

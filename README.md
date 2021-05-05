@@ -129,6 +129,37 @@
 }
 ```
 ![image.png](https://i.loli.net/2021/05/04/5rgbZBT4y9FESaV.png)
+### 老式信封
+```
+div {
+	padding: 1em;
+	border: 1em solid transparent;
+	background: linear-gradient(white, white) padding-box,
+	            repeating-linear-gradient(-45deg, red 0, red 12.5%, transparent 0, transparent 25%, 
+	              #58a 0, #58a 37.5%, transparent 0, transparent 50%) 0 / 6em 6em;
+	
+	max-width: 20em;
+	font: 100%/1.6 Baskerville, Palatino, serif;
+}
+```
+![image.png](https://i.loli.net/2021/05/05/O7thLeUP3SYdnlA.png)
+### 由边形
+```
+#button{
+    padding: 8px 16px;
+    display: inline-block;
+    background: blueviolet;
+    border-radius: 4px;
+    text-decoration-line: none;
+    color: #fff;
+    transform: skew(-45deg);
+}
+#button > div{
+    transform: skew(45deg);
+}
+```
+![image.png](https://i.loli.net/2021/05/05/uz5aYLiOeH94Wgy.png)
+
 
 
 
