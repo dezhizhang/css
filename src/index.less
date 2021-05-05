@@ -1,15 +1,20 @@
-#box{
-    background: #58a;
-	background:	radial-gradient(circle at top left, transparent 15px, #58a 0) top left,
-	            radial-gradient(circle at top right, transparent 15px, #58a 0) top right,
-	            radial-gradient(circle at bottom right, transparent 15px, #58a 0) bottom right,
-	            radial-gradient(circle at bottom left, transparent 15px, #58a 0) bottom left;
-	background-size: 50% 50%;
-	background-repeat: no-repeat;
-	
-	padding: 1em 1.2em;
-	max-width: 12em;
-	color: white;
-	font: 130%/1.6 Baskerville, Palatino, serif;
-
+body,main::before{
+    background: url('../asset/image/bg.jpeg') 0 / cover fixed;
+}
+main{
+    position: relative;
+    background: hsla(0,0%,100%,.3);
+    overflow: hidden;
+    color: red;
+}
+main::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    filter: blur(20px);
+    margin: -30px;
+    color: red;
 }
