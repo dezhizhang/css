@@ -159,6 +159,58 @@ div {
 }
 ```
 ![image.png](https://i.loli.net/2021/05/05/uz5aYLiOeH94Wgy.png)
+```
+#button{
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: #fff;
+    position: relative;
+    text-decoration-line: none;
+}
+#button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    color: #fff;
+    z-index: -1;
+    background: greenyellow;
+    transform: skewX(-46deg);
+}
+```
+### 切角
+```
+#box{
+    width: 200px;
+    height: 200px;
+    background: #58a;
+    background: linear-gradient(-45deg,transparent 15px,#58a 0);
+}
+```
+![image.png](https://z3.ax1x.com/2021/05/05/gKVI2V.png)(https://imgtu.com/i/gKVI2V)
+### 孤形切角
+```
+#box{
+    background: #58a;
+	background:	radial-gradient(circle at top left, transparent 15px, #58a 0) top left,
+	            radial-gradient(circle at top right, transparent 15px, #58a 0) top right,
+	            radial-gradient(circle at bottom right, transparent 15px, #58a 0) bottom right,
+	            radial-gradient(circle at bottom left, transparent 15px, #58a 0) bottom left;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	
+	padding: 1em 1.2em;
+	max-width: 12em;
+	color: white;
+	font: 130%/1.6 Baskerville, Palatino, serif;
+
+}
+```
+![image.png](https://z3.ax1x.com/2021/05/05/gKZdLF.png)(https://imgtu.com/i/gKZdLF)
+
 
 
 
