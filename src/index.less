@@ -1,4 +1,10 @@
-h1{
-  content: url('../asset/image/bg.jpeg');
-  height: 100px;
+.counter {
+  counter-reset: wangxiaoer 2; 
+  counter-increment: wangxiaoer;
+  font-size: 32px; 
+  font-family: Arial black; 
+  color: #cd0000; 
+}
+.counter:before { 
+  content: counter(wangxiaoer); 
 }

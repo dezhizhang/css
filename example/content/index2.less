@@ -1,0 +1,10 @@
+.counter{
+    counter-reset:dezhi 2;
+    font-size: 32px;
+    font-family: Arial Black;
+    color: #cd0000;
+  }
+  
+  .counter::before{
+    content: counter(dezhi);
+  }
