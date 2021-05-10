@@ -1,20 +1,23 @@
-body,main::before{
-    background: url('../asset/image/bg.jpeg') 0 / cover fixed;
+.ao,
+.tu {
+  display: inline-block;
+  width: 0;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 35px;
+  color: #fff;
 }
-main{
-    position: relative;
-    background: hsla(0,0%,100%,.3);
-    overflow: hidden;
-    color: red;
+.ao:before,
+.tu:before {
+  outline: 2px solid #cd0000;
+  font-family: Consolas, Monaco, monospace;
 }
-main::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    filter: blur(20px);
-    margin: -30px;
-    color: red;
+.ao:before {
+  content: "love你love";
+}
+.tu {
+  direction: rtl;
+}
+.tu:before {
+  content: "我love你";
 }
