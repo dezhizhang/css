@@ -1,6 +1,90 @@
-.father{
-  overflow: hidden;
+// .father {
+//   width: 300px;
+//   background-color: pink;
+//   position: relative;
+// }
+// .son {
+//   width: 200px; height: 120px;
+//   // margin-right: 80px;
+//   margin-left: auto;
+//   background-color: #cd0000;
+// }
+
+//居中对齐
+// .son{
+//   width: 200px;
+//   height: 120px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   background-color: red;
+// }
+
+// .son{
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+//   bottom: 0;
+//   top: 0;
+//   width: 200px;
+//   height: 100px;
+//   margin: auto;
+//   background: red;
+// }
+
+// .father {
+//   width: 300px; height: 150px;
+//   background-color: #f0f3f9;
+//   position:relative;
+// }
+// .son { 
+//   position: absolute; 
+//   top: 0; right: 0; bottom: 0; left: 0;
+//   width: 200px; height: 100px;
+//   background-color: #cd0000;
+//   margin: auto;
+// }
+
+// .box{
+//   height: 100px;
+//   background: pink;
+//   .child{
+//     height: 80px;
+//     margin-bottom: 100px;
+//     background: yellow;
+//   }
+// }
+
+
+// .add {
+//   display: inline-block;
+//   width: 76px; height: 76px;
+//   color: #ccc;
+//   border: 2px dashed;
+//   text-indent: -12em;
+//   transition: color .25s;
+//   position: relative;
+//   overflow: hidden;
+// }
+
+#search {
+  width: 200px; height: 40px;
+  padding: 10px 40px 10px 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
-.father > div{
-  margin: 1em 0;
+.icon-clear {
+  width: 16px; height: 16px;
+  margin: 1px 0 0 -38px;
+  border: 11px solid transparent;
+  border-radius: 50%;
+  background: #999;
+  color: white;
+  position: absolute;
+  visibility: hidden;
+}
+.icon-clear:before {
+  content: "×";
+}
+#search:valid + .icon-clear { 
+  visibility: visible;
 }
