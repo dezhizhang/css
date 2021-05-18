@@ -1,0 +1,38 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background: #ccc;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  .main{
+    width: 400px;
+    height: 400px;
+    border: 1px solid #eee;
+    .box{
+      width: 100px;
+      height: 100px;
+      background: red;
+      animation-name: hd;
+      animation-duration: 2s;
+    }
+  }
+ 
+}
+
+@keyframes hd {
+  25%{
+    transform: translateX(300px);
+  }
+  50%{
+    transform: translate(300px,300px);
+  }
+  75%{
+    transform: translateY(300px);
+  }
+}

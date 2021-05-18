@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eee;
+    .main{
+        width: 400px;
+        height: 400px;
+        border: 1px solid #ccc;
+        .box{
+            width: 100px;
+            height: 100px;
+            background: red;
+            animation-name: transform,backgrounds;
+            animation-duration: 4s;
+        }
+    }
+
+}
+
+@keyframes transform {
+    25%{
+        transform: translateX(300px);
+    }
+    50%{
+        transform: translate(300px,300px);
+    }
+    75%{
+        transform: translateY(300px);
+    }
+}
+
+@keyframes backgrounds {
+    25%{
+        background: green;
+    }
+    50%{
+        background: pink;
+    }
+    75%{
+        background: yellow;
+    }
+}
