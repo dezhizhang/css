@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: #eee;
+    transform: scale(0);
+    animation-name: scale;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    
+}
+.main::after{
+    content: '你好css';
+    font-size: 2em;
+    color: #fff;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-name: option;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes scale {
+    25%{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes option {
+    to{
+        opacity: 0.8;
+    }
+}
