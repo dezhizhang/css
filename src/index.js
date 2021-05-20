@@ -1,11 +1,10 @@
 /*
- * @Author: your name
- * @Date: 2021-05-09 23:02:51
- * :date last edited: 2021-05-18 22:18:58
- * :last editor: 张德志
- * @Description: In User Settings Edit
+ * :file description: 
  * :name: /css/src/index.js
+ * :author: 张德志
+ * :copyright: (c) 2021, Tungee
+ * :date created: 2021-05-19 22:04:05
+ * :last editor: 张德志
+ * :date last edited: 2021-05-19 22:04:05
  */
-import './index.less';
-
-
+import './index.less'

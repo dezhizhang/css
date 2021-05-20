@@ -1,10 +1,10 @@
 /*
  * @Author: your name
  * @Date: 2021-05-04 19:37:42
- * @LastEditTime: 2021-05-12 19:56:44
- * @LastEditors: your name
+ * :date last edited: 2021-05-19 21:11:32
+ * :last editor: 张德志
  * @Description: In User Settings Edit
- * @FilePath: /css/webpack.config.js
+ * :name: /css/webpack.config.js
  */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -32,7 +32,13 @@ module.exports = {
            },
            {
                test:/\.(png|jpg|jpeg)$/,
-               use:['file-loader']
+               use:[{
+                   loader:'url-loader',
+                   options:{
+                       limit:5 * 1025,
+                       
+                   }
+               }]
            }
         ]
     },

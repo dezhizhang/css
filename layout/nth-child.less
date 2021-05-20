@@ -1,0 +1,37 @@
+// .specified-scope {
+// 	width: 300px;
+// 	li {
+// 		padding: 0 20px;
+// 		height: 40px;
+// 		line-height: 40px;
+// 		color: #fff;
+// 		&:nth-child(odd) {
+// 			background-color: #f66;
+// 		}
+// 		&:nth-child(even) {
+// 			background-color: #66f;
+// 		}
+// 		&:nth-child(n+6):nth-child(-n+10) {
+// 			background-color: #3c9;
+// 		}
+// 	}
+// }
+
+.specified-scope{
+    width: 300px;
+    li{
+        padding: 0 20px;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        &:nth-child(odd) {
+            background: yellow;
+        }
+        &:nth-child(even) {
+            background: red;
+        }
+        &:nth-child(n+6):nth-child(-n + 10) {
+            background: green;
+        }
+    }
+}
