@@ -1,34 +1,63 @@
-.image-size {
-    display: flex;
-    justify-content: space-between;
-    width: 1000px;
-    height: 300px;
-    li{
-        width: 200px;
-    }
-    h3 {
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        font-weight: bold;
-        font-size: 16px;
-    }
-    img{
-        width: 100%;
-        height: 260px;
-        background-color: #3ec;
-        &.cover{
-            object-fit: cover;
-        }
-        &.contain{
-            object-fit: contain;
-        }
-        &.fill{
-            object-fit: fill;
-        }
-        &.scale-down{
-            object-fit: scale-down;
-        }
-    }
-    
+.iterative-counter {
+	ul {
+		counter-reset: index 0 count 0 weight 0;
+	}
+	li {
+		display: flex;
+		position: relative;
+		align-items: center;
+		counter-increment: index 1;
+		&::before {
+			content: counter(index)"、";
+		}
+		& + li {
+			margin-top: 10px;
+		}
+	}
+	input {
+		overflow: hidden;
+		position: absolute;
+		width: 0;
+		height: 0;
+		opacity: 0;
+		&:checked + label::before {
+			color: #3c9;
+			content: "\2713";
+		}
+	}
+	label {
+		display: flex;
+		align-items: center;
+		height: 20px;
+		&::before {
+			margin-right: 5px;
+			border: 1px solid #3c9;
+			width: 20px;
+			height: 20px;
+			cursor: pointer;
+			line-height: 20px;
+			text-align: center;
+			color: transparent;
+			content: "";
+			transition: all 300ms;
+		}
+	}
+	p {
+		margin-top: 10px;
+		&.count::after {
+			content: counter(count) attr(data-unit);
+		}
+		&.weight::after {
+			content: counter(weight) attr(data-unit);
+		}
+	}
+}
+#angular:checked {
+	counter-increment: count 1 weight 20;
+}
+#react:checked {
+	counter-increment: count 1 weight 50;
+}
+#vue:checked {
+	counter-increment: count 1 weight 30;
 }
