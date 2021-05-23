@@ -1,32 +1,20 @@
-// main{
-//     position: absolute;
-//     width: 18em;
-//     height: 6em;
-//     background: orange;
-//     top: calc(50% - 3em);
-//     left: calc(50% - 9em);
-// }
-// main{
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     background: orange;
-//     transform: translate(-50%,-50%);
-// }
 
-// main{
-//     width: 18em;
-//     padding: 1em 1.5em;
-//     margin: 0vh auto;
-//     background: red;
-//     transform: translateY(-50%);
-// }
-body{
-    display: flex;
-    min-height: 100vh;
-    margin: 0;
+
+.panoramic{
+    width: 200px;
+    height: 200px;
+    background: url('http://c3.staticflickr.com/3/2671/3904743709_74bc76d5ac_b.jpg');
+    background-size: auto 100%;
+    animation-play-state: paused;
+    animation: panoramic 10s linear infinite alternate;
 }
-main{
-    margin: auto;
-    background: red;
+
+.panoramic:hover,.panoramic:focus {
+    animation-play-state: running;
+}
+
+@keyframes panoramic{
+    to{
+        background-position: 100% 0;
+    }
 }
